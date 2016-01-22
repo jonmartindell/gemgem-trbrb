@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151212102323) do
+ActiveRecord::Schema.define(version: 20160122184011) do
 
   create_table "authorships", force: :cascade do |t|
     t.integer  "user_id"
@@ -34,6 +34,19 @@ ActiveRecord::Schema.define(version: 20151212102323) do
     t.integer  "weight"
     t.integer  "deleted"
     t.integer  "thing_id"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "memos", force: :cascade do |t|
+    t.date     "date"
+    t.text     "completed_tasks"
+    t.text     "future_plans"
+    t.text     "notes_to_self"
+    t.text     "successes"
+    t.text     "disappointments"
+    t.text     "expenses"
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
