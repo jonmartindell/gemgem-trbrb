@@ -178,6 +178,8 @@ GEM
       dragonfly (~> 1.0.12)
       uber
     pg (0.18.4)
+    puma (2.9.1)
+      rack (>= 1.1, < 2.0)
     pundit (1.0.1)
       activesupport (>= 3.0.0)
     quiet_assets (1.1.0)
@@ -312,6 +314,7 @@ DEPENDENCIES
   minitest-rails-capybara
   paperdragon (>= 0.0.10)
   pg
+  puma
   pundit
   quiet_assets
   rails (~> 4.2.0)

@@ -16,6 +16,7 @@ group :development do
 end
 gem "pg"
 gem "responders"
+gem "puma"
 
 group :development, :test do
   gem "minitest-rails-capybara"
