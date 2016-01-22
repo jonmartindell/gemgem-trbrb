@@ -1,16 +1,17 @@
 GIT
+  remote: git://github.com/apotonick/roar.git
+  revision: 5d3c2f15552b09a6b5b01ab87a6ba6df3c16e744
+  specs:
+    roar (1.0.3)
+      representable (>= 2.4.0, < 3.1.0)
+
+GIT
   remote: git://github.com/haml/haml.git
   revision: 7c7c16930b7fefd6dd9869a3af73f8d86c673b77
   ref: 7c7c169
   specs:
     haml (4.1.0.beta.1)
       tilt
-
-PATH
-  remote: ../roar
-  specs:
-    roar (1.0.3)
-      representable (>= 2.4.0, < 3.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -264,7 +265,7 @@ GEM
       declarative
       reform (>= 2.0.0, < 3.0.0)
       uber (>= 0.0.15)
-    trailblazer-loader (0.0.5)
+    trailblazer-loader (0.0.7)
     trailblazer-rails (0.2.3)
       trailblazer (>= 1.0.4)
       trailblazer-loader (>= 0.0.4)
@@ -333,4 +334,4 @@ DEPENDENCIES
   virtus
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
