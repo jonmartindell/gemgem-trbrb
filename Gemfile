@@ -23,6 +23,7 @@ group :development, :test do
   gem "minitest-rails-capybara"
   gem "minitest-line"
   gem "minitest-reporters"
+  gem "pry"
 end
 
 group :test do

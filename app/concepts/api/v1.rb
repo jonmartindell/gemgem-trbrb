@@ -3,7 +3,10 @@ module API
   end
 end
 
-# require_dependency "api/v1/comment/representer"
-# require_dependency "api/v1/comment/operation"
-# require_dependency "api/v1/thing/representer"
-# require_dependency "api/v1/thing/operation"
+require_dependency "comment/operation"
+require_dependency "thing/operation"
+require_dependency "api/v1/comment/representer"
+require_dependency "api/v1/comment/operation"
+require_dependency "api/v1/thing/representer"
+require_dependency "api/v1/thing/operation"
+require_dependency "api/v1/thing/operation"

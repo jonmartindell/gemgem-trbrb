@@ -1,4 +1,5 @@
 require_dependency "thing/policy" # TODO: do with trailblazer-loader
+require_dependency "thing/callback" # TODO: do with trailblazer-loader
 
 class Thing < ActiveRecord::Base
   class Create < Trailblazer::Operation

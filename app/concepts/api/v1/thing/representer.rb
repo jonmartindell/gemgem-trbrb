@@ -1,4 +1,3 @@
-require_relative "../comment/representer"
 module API::V1
   module Thing
     module Representer

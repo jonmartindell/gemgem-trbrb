@@ -1,0 +1,23 @@
+.header
+  %h1
+
+= simple_form_for [@form] do |f| # POST /things/1/comments/
+  %h3 How goes it?
+
+  = f.input :date, as: :date, html5: true
+  = f.input :completed_tasks, placeholder: "planted some seeds", as: :text, input_html: {rows: '2'}
+  = f.input :future_plans, placeholder: "weeding", as: :text, input_html: {rows: '2'}
+  = f.input :notes_to_self, placeholder: "wait till last frost", as: :text, input_html: {rows: '2'}
+  = f.input :successes, placeholder: "plants grew", as: :text, input_html: {rows: '2'}
+  = f.input :disappointments, placeholder: "weeds grew", as: :text, input_html: {rows: '2'}
+  = f.input :expenses, placeholder: "6 Tomatoe Plants - $2", as: :text, input_html: {rows: '2'}
+
+
+  = f.button :submit, class: :expand
+
+-# Rails flash messages styled for Zurb Foundation
+- @form.errors.messages.each_pair do |name, msg|
+  - if msg.first.is_a?(String)
+    %div{:class => "alert-box round #{name.to_s == 'notice' ? 'success' : 'alert'}", "data-alert" => ""}
+      = content_tag :div, msg.first
+      %a.close{:href => "#"} &times;
