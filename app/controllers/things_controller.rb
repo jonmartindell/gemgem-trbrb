@@ -36,6 +36,15 @@ class ThingsController < ApplicationController
     form Comment::Create # overrides @model and @form!
   end
 
+  def destroy
+    run Thing::Delete do |op|
+      flash[:notice] = "#{op.model.name} deleted."
+      return redirect_to root_path
+    end
+
+    render :index
+  end
+
   def create_comment
     @thing_op = present Thing::Show
     @thing    = @thing_op.model

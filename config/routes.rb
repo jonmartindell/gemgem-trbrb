@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
   root to: 'home#index'
 
+  #resources :memos
   resources :things do
     member do
       post :create_comment
@@ -9,6 +10,7 @@ Rails.application.routes.draw do
   end
 
   resources :users
+
 
   get  "sessions/sign_up_form"
   post "sessions/sign_up"

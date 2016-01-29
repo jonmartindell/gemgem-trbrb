@@ -22,6 +22,7 @@ gem "puma"
 group :development, :test do
   gem "minitest-rails-capybara"
   gem "minitest-line"
+  gem "minitest-reporters"
 end
 
 group :test do
@@ -36,7 +37,7 @@ end
 # stable versions will be released soon.
 # gem "reform",      github: "apotonick/reform"
 gem "trailblazer",       "1.1.0"
-gem "trailblazer-rails", ">= 0.2.3"
+gem "trailblazer-rails"
 gem "roar",        github: "apotonick/roar" #"1.0.0"
 gem "representable",     "3.0.0"
 gem "reform",            "2.1.0"
